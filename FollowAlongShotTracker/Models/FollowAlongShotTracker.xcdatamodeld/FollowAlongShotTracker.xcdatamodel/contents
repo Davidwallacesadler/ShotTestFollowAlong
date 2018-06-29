@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17E199" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="BodyPart" representedClassName="BodyPart" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numberOfSites" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="sites" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Site" syncable="YES"/>
+    </entity>
+    <entity name="Injection" representedClassName="Injection" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photo" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="Site" representedClassName="Site" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="history" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Injection" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BodyPart" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Site" positionX="-54" positionY="18" width="128" height="90"/>
+        <element name="Injection" positionX="-36" positionY="36" width="128" height="90"/>
+    </elements>
+</model>
