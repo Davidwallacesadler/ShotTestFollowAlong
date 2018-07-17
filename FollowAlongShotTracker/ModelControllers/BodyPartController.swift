@@ -29,7 +29,7 @@ class BodyPartController {
         }
     }
     
-    func createBodyPart(location:String, numberOfSites: Double, color: Double) -> Bodypart {
+    func createBodyPart(location:String, numberOfSites: Double, color: Double) -> BodyPart {
         //initialize bodypart with passed in values
         let bodyPart = BodyPart(color: color, location: location, numberOfSites: numberOfSites)
         //saveToPersistentStorage()

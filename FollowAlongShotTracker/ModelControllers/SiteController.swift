@@ -108,7 +108,7 @@ func saveToPersistentStorage() {
         print(error.localizedDescription)
     }
 }
-
+}
 //context is like a scratchpad for data. if the scratchpad has changes then we will save the changes. The save function throws - means that it can fail. when something throws it must be put into a do,try,catch statement. Do something to try - if it throws an error you can catch it and prin an error.
 
 

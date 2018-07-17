@@ -17,7 +17,8 @@ class InjectionController {
     
     //MARK:- Internal Properties
     
-    //adding the curly braces to a variable it becomes a computed property. Stored property is a gerneral property - a usuall let or var.
+    //adding the curly braces to a variable it becomes a computed property. Stored property is a gerneral property - a usual let or var.
+    
     //moc - managed object conext. between the user and the storage. we give it the request to grab it from persistent storage - here we are requesting all the injections. if it doeset work for some reason we will return just an empty array.
     var injections: [Injection] {
         let request: NSFetchRequest<Injection> = Injection.fetchRequest()
@@ -35,17 +36,20 @@ class InjectionController {
         if let picture = photo {
             guard let photoData = UIImageJPEGRepresentation(picture, 1.0) as Data? else { return nil }
             let injection = Injection(date: Date(), notes: notes, photo: photoData, context: CoreDataStack.context)
+            saveToPersistentStorage()
+            return injection
         } else {
             let injection = Injection(date: Date(), notes: notes, photo: nil, context: CoreDataStack.context)
+            saveToPersistentStorage()
             return injection
         }
      
     }
     
-    func deleteInjection(Injection: Injection) {
+    func deleteInjection(injection: Injection) {
         let moc = injection.managedObjectContext
         moc?.delete(injection)
-        saveToPersistentStorage
+        saveToPersistentStorage()
     }
     
     //MARK: - Persistence

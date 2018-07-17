@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		630C349520FE5902006EB574 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C349420FE5902006EB574 /* Theme.swift */; };
+		630C349720FE5C03006EB574 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630C349620FE5C03006EB574 /* Color.swift */; };
 		6314BD5620E6D5DF0021558E /* InjectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6314BD5520E6D5DF0021558E /* InjectionController.swift */; };
 		63E8093120C85AAB002D6528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E8093020C85AAB002D6528 /* AppDelegate.swift */; };
 		63E8093620C85AAB002D6528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63E8093420C85AAB002D6528 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		630C349420FE5902006EB574 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		630C349620FE5C03006EB574 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		6314BD5520E6D5DF0021558E /* InjectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectionController.swift; sourceTree = "<group>"; };
 		63E8092D20C85AAB002D6528 /* FollowAlongShotTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FollowAlongShotTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E8093020C85AAB002D6528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		630C349320FE58E4006EB574 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				630C349420FE5902006EB574 /* Theme.swift */,
+				630C349620FE5C03006EB574 /* Color.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
 		63E8092420C85AAB002D6528 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +127,7 @@
 				63E8093C20C85AAD002D6528 /* Info.plist */,
 				63E8093020C85AAB002D6528 /* AppDelegate.swift */,
 				63E8093420C85AAB002D6528 /* Main.storyboard */,
+				630C349320FE58E4006EB574 /* Appearance */,
 				63E8095F20C85BCD002D6528 /* Models */,
 				63E8096B20C87831002D6528 /* ModelControllers */,
 				63E8095E20C85BA7002D6528 /* Resources */,
@@ -303,11 +317,13 @@
 			files = (
 				63E8096F20C880F3002D6528 /* SiteController.swift in Sources */,
 				63E8096820C86FF3002D6528 /* Site+Convenience.swift in Sources */,
+				630C349720FE5C03006EB574 /* Color.swift in Sources */,
 				63E8096A20C8762A002D6528 /* Injection+Convenience.swift in Sources */,
 				63E8096420C86B67002D6528 /* CoreDataStack.swift in Sources */,
 				63E8093120C85AAB002D6528 /* AppDelegate.swift in Sources */,
 				63E8096620C86EEB002D6528 /* BodyPart+Convenience.swift in Sources */,
 				63E8096220C85C25002D6528 /* FollowAlongShotTracker.xcdatamodeld in Sources */,
+				630C349520FE5902006EB574 /* Theme.swift in Sources */,
 				6314BD5620E6D5DF0021558E /* InjectionController.swift in Sources */,
 				63E8096D20C8788A002D6528 /* BodyPartController.swift in Sources */,
 			);
