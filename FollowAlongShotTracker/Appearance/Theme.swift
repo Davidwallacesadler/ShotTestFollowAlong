@@ -28,7 +28,7 @@ enum Theme {
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
         
         //This changes the color for the icons on the tab bar when they are selected.
-        UITabBar.appearance().tintColor = UIColor.offWhite
+        UITabBar.appearance().tintColor = UIColor.lightNeutralGreen
     
         //This changes the text color belonging to an icon on the tab bar.
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.offWhite], for: .normal)
@@ -43,7 +43,7 @@ enum Theme {
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.maroonViolet, NSAttributedStringKey.font: UIFont.italicSystemFont(ofSize: 30)]
         
         //This controls the appearance of the system info (time/date, battery icon, service).
-        UINavigationBar.appearance().barStyle = .blackTranslucent  //CANT MAKE THIS BLACK 
+        UINavigationBar.appearance().barStyle = .blackTranslucent  //WANT THIS TO BE BLACK
         
         //This changes the color for the bottom bar (IE UITabBar).
         UITabBar.appearance().barTintColor = UIColor.lilacPurple
@@ -79,9 +79,9 @@ enum Theme {
         UITabBar.appearance().tintColor = UIColor.keyLimeGreen
         
         //This changes the text color belonging to an icon on the tab bar.
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.offWhite], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.lightNeutralGreen], for: .normal)
     }
-    static func eggplantTheme() {
+    static func darkPlumTheme() {
         
         //This controls the color for the top bar (IE the UINavigationBar).
         UINavigationBar.appearance().barTintColor = UIColor.maroonViolet
