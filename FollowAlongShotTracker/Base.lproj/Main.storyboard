@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="1924" y="18.440779610194905"/>
         </scene>
-        <!--View Controller-->
+        <!--Shot-Tracker-->
         <scene sceneID="js9-Kj-zAT">
             <objects>
                 <viewController id="hzf-2T-L9r" sceneMemberID="viewController">
@@ -36,7 +36,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xgR-MO-DqO"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rqL-Jf-Old"/>
+                    <navigationItem key="navigationItem" title="Shot-Tracker" id="rqL-Jf-Old"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ryd-4s-rzl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -67,6 +67,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pDX-TM-jiP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7OM-ST-Knb">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

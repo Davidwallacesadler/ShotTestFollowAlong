@@ -10,32 +10,190 @@ import UIKit
 
 enum Theme {
     
-    static func blueTheme() {
+    static func oceanTheme() {
         
-        //This changes the color for the top bar (IE UINavigationBar)
-        UINavigationBar.appearance().barTintColor = UIColor.newColor
+        //This controls the color for the top bar (IE the UINavigationBar).
+        UINavigationBar.appearance().barTintColor = UIColor.oceanBlue
         
-        //This changes the color and font of the title on the top bar
+        //This controls the color and font of the title on the navigation bar.
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: UIFont.italicSystemFont(ofSize: 30)]
         
-        //This changes the appearance of the system info (time, battery icons, service)
+        //This controls the appearance of the system info (time/date, battery icon, service).
         UINavigationBar.appearance().barStyle = .blackOpaque  //Note: blackOpaque is white
         
-        //This changes the color for the bottom bar (IE UITabBar)
-        UITabBar.appearance().barTintColor = UIColor.newColor
+        //This changes the color for the bottom bar (IE UITabBar).
+        UITabBar.appearance().barTintColor = UIColor.oceanBlue
         
-        //This changes the color for the icons on the bottom bar when they are not selected
+        //This changes the color for the icons on the tab bar when they are not selected.
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
         
-        UITabBar.appearance().tintColor = UIColor.red
+        //This changes the color for the icons on the tab bar when they are selected.
+        UITabBar.appearance().tintColor = UIColor.offWhite
     
-        
-        //This changes the color for the icons on the bottom bar when they are selected
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.red], for: .normal)
-        
+        //This changes the text color belonging to an icon on the tab bar.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.offWhite], for: .normal)
     }
     
-    static func newTheme() {
+    static func lavenderTheme() {
         
+        //This controls the color for the top bar (IE the UINavigationBar).
+        UINavigationBar.appearance().barTintColor = UIColor.lilacPurple
+        
+        //This controls the color and font of the title on the navigation bar.
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.maroonViolet, NSAttributedStringKey.font: UIFont.italicSystemFont(ofSize: 30)]
+        
+        //This controls the appearance of the system info (time/date, battery icon, service).
+        UINavigationBar.appearance().barStyle = .blackTranslucent  //CANT MAKE THIS BLACK 
+        
+        //This changes the color for the bottom bar (IE UITabBar).
+        UITabBar.appearance().barTintColor = UIColor.lilacPurple
+        
+        //This changes the color for the icons on the tab bar when they are not selected.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.maroonViolet], for: .normal) //???DONT KNOW WHAT THIS IS DOING??? ICONS STAY GRAY
+        
+        //This changes the color for the icons on the tab bar when they are selected.
+        UITabBar.appearance().tintColor = UIColor.offBlack
+        
+        //This changes the text color belonging to an icon on the tab bar.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.maroonViolet], for: .normal)
+        
+    }
+    static func forestTheme() {
+        
+        //This controls the color for the top bar (IE the UINavigationBar).
+        UINavigationBar.appearance().barTintColor = UIColor.forestGreen
+        
+        //This controls the color and font of the title on the navigation bar.
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.keyLimeGreen, NSAttributedStringKey.font: UIFont.italicSystemFont(ofSize: 30)]
+        
+        //This controls the appearance of the system info (time/date, battery icon, service).
+        UINavigationBar.appearance().barStyle = .blackOpaque  //Note: blackOpaque is white
+        
+        //This changes the color for the bottom bar (IE UITabBar).
+        UITabBar.appearance().barTintColor = UIColor.forestGreen
+        
+        //This changes the color for the icons on the tab bar when they are not selected.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
+        
+        //This changes the color for the icons on the tab bar when they are selected.
+        UITabBar.appearance().tintColor = UIColor.keyLimeGreen
+        
+        //This changes the text color belonging to an icon on the tab bar.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.offWhite], for: .normal)
+    }
+    static func eggplantTheme() {
+        
+        //This controls the color for the top bar (IE the UINavigationBar).
+        UINavigationBar.appearance().barTintColor = UIColor.maroonViolet
+        
+        //This controls the color and font of the title on the navigation bar.
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.offWhite, NSAttributedStringKey.font: UIFont.italicSystemFont(ofSize: 30)]
+        
+        //This controls the appearance of the system info (time/date, battery icon, service).
+        UINavigationBar.appearance().barStyle = .blackOpaque  //Note: blackOpaque is white
+        
+        //This changes the color for the bottom bar (IE UITabBar).
+        UITabBar.appearance().barTintColor = UIColor.maroonViolet
+        
+        //This changes the color for the icons on the tab bar when they are not selected.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
+        
+        //This changes the color for the icons on the tab bar when they are selected.
+        UITabBar.appearance().tintColor = UIColor.lilacPurple
+        
+        //This changes the text color belonging to an icon on the tab bar.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.offWhite], for: .normal)
+    }
+    static func blueAndOrangeTheme() {
+        
+        //This controls the color for the top bar (IE the UINavigationBar).
+        UINavigationBar.appearance().barTintColor = UIColor.navyBlue
+        
+        //This controls the color and font of the title on the navigation bar.
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.offWhite, NSAttributedStringKey.font: UIFont.italicSystemFont(ofSize: 30)]
+        
+        //This controls the appearance of the system info (time/date, battery icon, service).
+        UINavigationBar.appearance().barStyle = .blackOpaque  //Note: blackOpaque is white
+        
+        //This changes the color for the bottom bar (IE UITabBar).
+        UITabBar.appearance().barTintColor = UIColor.navyBlue
+        
+        //This changes the color for the icons on the tab bar when they are not selected.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.offWhite], for: .normal)
+        
+        //This changes the color for the icons on the tab bar when they are selected.
+        UITabBar.appearance().tintColor = UIColor.pumpkinOrange
+        
+        //This changes the text color belonging to an icon on the tab bar.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.offWhite], for: .normal)
+    }
+    static func strawberryTheme() {
+        
+        //This controls the color for the top bar (IE the UINavigationBar).
+        UINavigationBar.appearance().barTintColor = UIColor.strawberryPink
+        
+        //This controls the color and font of the title on the navigation bar.
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.offWhite, NSAttributedStringKey.font: UIFont.italicSystemFont(ofSize: 30)]
+        
+        //This controls the appearance of the system info (time/date, battery icon, service).
+        UINavigationBar.appearance().barStyle = .blackOpaque  //Note: blackOpaque is white
+        
+        //This changes the color for the bottom bar (IE UITabBar).
+        UITabBar.appearance().barTintColor = UIColor.strawberryPink
+        
+        //This changes the color for the icons on the tab bar when they are not selected.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
+        
+        //This changes the color for the icons on the tab bar when they are selected.
+        UITabBar.appearance().tintColor = UIColor.daisyYellow
+        
+        //This changes the text color belonging to an icon on the tab bar.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.offWhite], for: .normal)
+    }
+    static func blueSkyTheme() {
+        
+        //This controls the color for the top bar (IE the UINavigationBar).
+        UINavigationBar.appearance().barTintColor = UIColor.skyBlue
+        
+        //This controls the color and font of the title on the navigation bar.
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.offWhite, NSAttributedStringKey.font: UIFont.italicSystemFont(ofSize: 30)]
+        
+        //This controls the appearance of the system info (time/date, battery icon, service).
+        UINavigationBar.appearance().barStyle = .blackOpaque  //Note: blackOpaque is white
+        
+        //This changes the color for the bottom bar (IE UITabBar).
+        UITabBar.appearance().barTintColor = UIColor.skyBlue
+        
+        //This changes the color for the icons on the tab bar when they are not selected.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
+        
+        //This changes the color for the icons on the tab bar when they are selected.
+        UITabBar.appearance().tintColor = UIColor.deepBlue
+        
+        //This changes the text color belonging to an icon on the tab bar.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.offWhite], for: .normal)
+    }
+    static func sunflowerTheme() {
+        
+        //This controls the color for the top bar (IE the UINavigationBar).
+        UINavigationBar.appearance().barTintColor = UIColor.daisyYellow
+        
+        //This controls the color and font of the title on the navigation bar.
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.offBlack, NSAttributedStringKey.font: UIFont.italicSystemFont(ofSize: 30)]
+        
+        //This controls the appearance of the system info (time/date, battery icon, service).
+        UINavigationBar.appearance().barStyle = .blackOpaque  //THIS NEEDS TO BE BLACK SOMEHOW
+        
+        //This changes the color for the bottom bar (IE UITabBar).
+        UITabBar.appearance().barTintColor = UIColor.daisyYellow
+        
+        //This changes the color for the icons on the tab bar when they are not selected.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.white], for: .normal)
+        
+        //This changes the color for the icons on the tab bar when they are selected.
+        UITabBar.appearance().tintColor = UIColor.pumpkinOrange
+        
+        //This changes the text color belonging to an icon on the tab bar.
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedStringKey.foregroundColor: UIColor.offBlack], for: .normal)
     }
 }
