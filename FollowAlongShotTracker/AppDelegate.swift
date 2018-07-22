@@ -18,6 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Theme.blueAndOrangeTheme()
         
+        guard let tabBarController = window?.rootViewController as? UITabBarController else { return true }
+        for tab in tabBarController.tabBar.items! {
+            tab.title = ""
+            tab.imageInsets = UIEdgeInsetsMake(6, 0, -6, 0)
+        }
+        
         return true
     }
 
